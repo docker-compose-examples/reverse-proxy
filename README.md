@@ -26,6 +26,7 @@ services:
     - "traefik.enable=true"
     - "traefik.backend=microbot"
     - "traefik.frontend.rule=Host:microbot.example.com"
+    - "traefik.domain=microbot.example.com"
     - "traefik.docker.network=reverseproxy_default"
     networks:
     - "reverseproxy_default"
